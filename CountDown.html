@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count down</title>
+  <style>
+    body{
+      margin-top:6.25rem;
+      background-color: rgb(28, 0, 54);
+      place-items: center;
+      color:white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+      font-size: 10em;
+    }
+    .btn{
+      padding: 0.7rem 1.5rem;
+      background-color: rgb(183, 106, 255);
+      border:1px solid white;
+      border-radius: 0.1rem;
+      cursor: pointer;
+      transition: background-color 2s;
+    }
+    .btn:hover{
+      background-color: rgb(58, 1, 112);
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- <label for="" id="countLabel" >0</label><br>
+
+  <div class="btn-cont" id="btnContainer">
+    <button class="btn" id="decreaseBtn">Decrease</button>
+    <button class="btn" id="resetBtn">Reset</button>
+    <button class="btn" id="increaseBtn">Increase</button>
+  </div> -->
+
+  <label for="" id="countLabel" >0</label><br>
+
+  <div class="btn-cont" id="btnContainer">
+    <button class="btn" onclick="decreaseBtn()">Decrease</button>
+    <button class="btn" onclick="resetBtn()">Reset</button>
+    <button class="btn" onclick="increaseBtn()">Increase</button>
+  </div>
+  
+  <script src="./CountDown.js"></script>
+</body>
+</html>
