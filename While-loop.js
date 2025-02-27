@@ -1,4 +1,4 @@
-// loop =  repeats some code until a condition is met or true
+// While-loop =  repeats some code until a condition is met or true
 // if your condition is true it would run your code infinitiely thats what we describe as an infinite loop
 
 let username = "";
