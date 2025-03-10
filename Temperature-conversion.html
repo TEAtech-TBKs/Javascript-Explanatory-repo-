@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Temperature conversion</title>
+ <style>
+  body{
+     background-color:rgb(14, 48, 71);
+     color: rgb(182, 255, 175) ;
+     font-family: Arial, Helvetica, sans-serif;
+     }
+     h1{
+     color: rgb(145, 255, 0);
+     }
+     div{
+     place-items: center;
+     border:1px solid;
+     }
+     section{
+     place-items: center;
+     }
+     form{
+     background-color: rgb(0, 65, 109);
+     padding: 1rem 1.5rem;
+     border-radius: 15px;
+     text-align: center;
+     box-shadow: 1px 2px 15px rgb(0, 0, 58);
+     margin: 1rem;
+     }
+     input{
+     text-align: center;
+     }
+     label{
+     font-weight: bold;
+     }
+     button{
+     background-color: rgb(255, 238, 0);
+     border: none;
+     font-weight: bold;
+     cursor: pointer;
+     padding: 0.3rem 1rem;
+     }
+     #result{
+     font-weight: bold;
+     font-size: 1.3rem;
+     }
+ </style>
+</head>
+<body>
+ <div>
+   <h1>Temperature Conversion</h1>
+ </div>
+ <section>
+   <form action="">
+     <h1>Temperature Conversion</h1>
+      <label for="textbox">celsius</label><br><br>
+      <input type="text" value="0" id="textbox" ><br><br>
+      
+      <input type="radio" name="unit" id="fahrenheit" >
+      <label for="fahrenheit">celsius = fahrenheit</label><br><br>
+      
+      <input type="radio" name="unit" id="celsius" >
+      <label for="celsius">fahrenheit = celsius</label><br><br>
+      
+      <button type="button" onclick="convert()">Convert</button>
+      <p id="result"></p>
+   </form>
+   </section>
+ 
+ <script src="./Temperature-conversion.js"></script>
+</body>
+</html>
